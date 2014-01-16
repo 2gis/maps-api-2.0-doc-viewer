@@ -1,0 +1,27 @@
+<ul>
+    <?php foreach ($menuArr as $value) { ?>
+        
+        <?php if ($value['children']) { ?>
+            <li class="expanded">
+            <a href="javascript:void(0)" class="toggler"><span class="toggler-bullet"></span></a>
+        <?php } else { ?>
+            <li>
+        <?php } ?>
+
+            <a href=""><?php echo $value['content']['ru']['title']; ?></a>
+            
+            <?php if ($value['children']) { ?>
+                <li class="expanded">
+                    <ul>
+                        <?php foreach ($value['children'] as $childValue) { ?>
+                            <li>
+                                <?php echo Yii::app()->baseUrl; ?>
+                                <a href="/<?php echo $childValue['content']['ru']['uri'] ?>"><?php echo $childValue['content']['ru']['title']; ?></a></li>
+                        <?php } ?>
+                    </ul>
+                </li>
+            <?php } ?>
+        
+        </li>
+    <?php } ?>
+</ul>
