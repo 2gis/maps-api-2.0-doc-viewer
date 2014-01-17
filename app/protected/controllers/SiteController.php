@@ -5,6 +5,10 @@
  */
 class SiteController extends CController
 {
+    public function actionIndex(){
+        $this->redirect('/doc');
+    }
+
 	public function actionDoc($uri)
 	{
         $menuArr = json_decode(Yii::app()->httpclient->getContent(Yii::app()->params['menu']), true)['mapsapi']['children'];

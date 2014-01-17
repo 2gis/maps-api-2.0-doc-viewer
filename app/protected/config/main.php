@@ -13,19 +13,13 @@ return array(
     ),
     // application components
     'components' => array(
-        'decoda' => array(
-            'class' => 'YiiDecoda',
-            'locale' => 'ru-ru',
-            'addFilters' => array('Doc'),
-        ),
         'httpclient' => array(
             'class' => 'ExtHttpClient'
         ),
         'urlManager' => array(
             'urlFormat' => 'path',
             'rules' => array(
-                '' => 'site/doc',
-                //'doc/maps/manual/<uri:.+>'=>'site/doc',
+                '' => 'site/index',
                 '<uri:.+>'=>'site/doc',
                 'doc' => 'site/doc'
             ),
