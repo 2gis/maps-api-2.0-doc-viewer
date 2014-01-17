@@ -25,8 +25,9 @@ return array(
             'urlFormat' => 'path',
             'rules' => array(
                 '' => 'site/doc',
-                'doc' => 'site/doc',
-                'doc/maps/manual/<docUri:.+>'=>'site/doc'
+                //'doc/maps/manual/<uri:.+>'=>'site/doc',
+                '<uri:.+>'=>'site/doc',
+                'doc' => 'site/doc'
             ),
         ),
     ),

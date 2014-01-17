@@ -8,14 +8,13 @@
             <li>
         <?php } ?>
 
-            <a href=""><?php echo $value['content']['ru']['title']; ?></a>
+            <a href="/<?php echo $value['content']['ru']['uri'] ?>"><?php echo $value['content']['ru']['title']; ?></a>
             
             <?php if ($value['children']) { ?>
                 <li class="expanded">
                     <ul>
                         <?php foreach ($value['children'] as $childValue) { ?>
                             <li>
-                                <?php echo Yii::app()->baseUrl; ?>
                                 <a href="/<?php echo $childValue['content']['ru']['uri'] ?>"><?php echo $childValue['content']['ru']['title']; ?></a></li>
                         <?php } ?>
                     </ul>
