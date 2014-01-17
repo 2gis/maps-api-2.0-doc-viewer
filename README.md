@@ -2,8 +2,8 @@
 Приложение для просмотра документации в стилистике сайта api.2gis.ru
 
 ## Установка
-1. Склонировать репозиторий
-2. Настроить Nginx. Пример конфигурационного файла (/etc/nginx/sites-enabled/docviewer.local) можно посмотреть [здесь](https://github.com/2gis/maps-api-2.0-doc-viewer/blob/master/nginx-sample.conf)
+1. Склонировать репозиторий.
+2. Настроить Nginx. Пример конфигурационного файла (/etc/nginx/sites-enabled/docviewer.local) можно посмотреть [здесь](https://github.com/2gis/maps-api-2.0-doc-viewer/blob/master/nginx-sample.conf).
 3. Сконфигурировать приложение. Файл конфигурации находится по адресу `app/protected/config/main.php`.
 
 Параметры для конфигурации:
