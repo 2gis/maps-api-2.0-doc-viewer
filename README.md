@@ -5,7 +5,7 @@
 1. Склонировать репозиторий
 2. Настроить Nginx. Пример конфигурационного файла (/etc/nginx/sites-enabled/docviewer.local):
 
-’    server {
+    server {
         set $host_path "/var/www/maps-api-2.0-doc-viewer/app";
     #    access_log  /var/www/maps-api-2.0-doc-viewer/access.log;
     #    error_log   /var/www/maps-api-2.0-doc-viewer/error.log;
@@ -56,7 +56,7 @@
             log_not_found off;
         }
     }
-’
+
 3. Сконфигурировать приложение. Файл конфигурации находится по адресу `app/protected/config/main.php`. Параметры для конфигурации:
 
     // application params
