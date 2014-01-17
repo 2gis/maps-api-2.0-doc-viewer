@@ -11,5 +11,6 @@
         'docDir' => 'http://maps.api.2gis.ru/2.0/doc',
         'menu' => 'http://maps.api.2gis.ru/2.0/doc/menu.json'
     )
+    
 * docDir - адрес публичного каталога, в котором находятся подкаталоги с .html файлами документации.
 * menu - адрес, по которому доступен файл menu.json
