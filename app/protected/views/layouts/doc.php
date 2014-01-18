@@ -2,19 +2,18 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Базовые классы</title>
+        <title>API 2ГИС</title>
         <link rel="shortcut icon" type="image/x-icon" href="http://api.2gis.ru/favicon.ico" />
-        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/reset.css?v=1" />
-                <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/solarized_light.css?v=1" />
-
-                <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/api.css?v=3" />
-                <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/doc.css?v=1" />
-        
-        
-        <link rel="stylesheet" type="text/css" href="http://api.2gis.ru/assets/frontend/api/css/masha.css?v=1">
-        <!--[IF IE]><script type="text/javascript" src="http://api.2gis.ru/assets/frontend/api/js/ierange.js?v=1"></script><![ENDIF]-->
-                <script type="text/javascript" src="http://api.2gis.ru/assets/frontend/api/js/masha.min.js?v=1"></script>
-
+        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/reset.v15.css?v=1" />
+        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/highlight_default_webapi.v15.css?v=2" />
+        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/api_site_webapi.v15.css?v=7" />
+        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/doc_webapi.v15.css?v=6" />
+        <link rel="stylesheet" href="http://api.2gis.ru/assets/frontend/api/css/widget_notify.v15.css" />
+        <link rel="stylesheet" type="text/css" href="http://api.2gis.ru/assets/frontend/api/css/masha.v15.css?v=1">
+        <!--[IF IE]><script type="text/javascript" src="http://api.2gis.ru/assets/frontend/api/js/ierange.v15.js?v=1"></script><![ENDIF]-->
+        <script src="http://api.2gis.ru/assets/frontend/api/js/jquery.min.v15.js?v=1"></script>
+        <script src="http://api.2gis.ru/assets/frontend/api/js/jquery.cookie.v15.js?v=1"></script>
+        <script type="text/javascript" src="http://api.2gis.ru/assets/frontend/api/js/masha.min.v15.js?v=2"></script>
         
         <script type="text/javascript">
             if(window.addEventListener){
@@ -29,11 +28,8 @@
                 });
             }
         </script>
+    </head>
         
-            </head>
-
-            
-            
     <body>
         <?php echo $content ?>
 
@@ -77,7 +73,7 @@
                     <ul>
                         <li class="email"><a href="mailto:api@2gis.ru">api@2gis.ru</a></li>
                         <li class="phone">+7 (383) 363-0-555 <div class="phone-add">дополнительный 146</div></li>
-                        <li class="twitter-btn"><a href="http://twitter.com/api2gis"><img src="/assets/frontend/api/images/tmp/twitter-button.png" alt="" /></a></li>
+                        <li class="twitter-btn"><a href="http://twitter.com/api2gis"><img src="http://api.2gis.ru/assets/frontend/api/images/tmp/twitter-button.png" alt="" /></a></li>
                         <li class="account"><a href="#">Личный кабинет</a></li>
 
                         <li class="terms"><a href="#">Условия использования</a></li>
