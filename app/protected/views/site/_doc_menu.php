@@ -8,14 +8,14 @@
             <li>
         <?php } ?>
 
-            <a href="/<?php echo $value['content']['ru']['uri'] ?>"><?php echo $value['content']['ru']['title']; ?></a>
+            <a href="/doc/<?php echo $value['content']['ru']['uri'] ?>"><?php echo $value['content']['ru']['title']; ?></a>
             
             <?php if ($value['children']) { ?>
                 <li class="expanded">
                     <ul>
                         <?php foreach ($value['children'] as $childValue) { ?>
                             <li>
-                                <a href="/<?php echo $childValue['content']['ru']['uri'] ?>"><?php echo $childValue['content']['ru']['title']; ?></a></li>
+                                <a href="/doc/<?php echo $childValue['content']['ru']['uri'] ?>"><?php echo $childValue['content']['ru']['title']; ?></a></li>
                         <?php } ?>
                     </ul>
                 </li>

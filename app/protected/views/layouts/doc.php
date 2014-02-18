@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style rel="stylesheet">
+            sub, sup {
+                /* Specified in % so that the sup/sup is the
+                right size relative to the surrounding text */
+                font-size: 75%;
+                 
+                /* Zero out the line-height so that it doesn't
+                interfere with the positioning that follows */
+                line-height: 0;
+                 
+                /* Where the magic happens: makes all browsers position
+                the sup/sup properly, relative to the surrounding text */
+                position: relative;
+                 
+                /* Note that if you're using Eric Meyer's reset.css, this
+                is already set and you can remove this rule */
+                vertical-align: baseline;
+            }
+             
+            sup {
+                /* Move the superscripted text up */
+                top: -0.3em;
+            }
+             
+            sub {
+                /* Move the subscripted text down, but only
+                half as far down as the superscript moved up */
+                bottom: -0.25em;
+            }
+        </style>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>API 2ГИС</title>
         <link rel="shortcut icon" type="image/x-icon" href="http://api.2gis.ru/favicon.ico" />

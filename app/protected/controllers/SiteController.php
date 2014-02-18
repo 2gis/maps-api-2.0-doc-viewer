@@ -14,6 +14,7 @@ class SiteController extends CController
         $menuArr = json_decode(Yii::app()->httpclient->getContent(Yii::app()->params['menu']), true)['mapsapi']['children'];
 
         $docPath = Yii::app()->params['docDir'] . '/' . $this->_infoportalUriToDocViewerUri($uri, $menuArr);
+
         $content = Yii::app()->httpclient->getContent($docPath);
 
         $this->layout = 'doc';
@@ -23,11 +24,14 @@ class SiteController extends CController
     private function _infoportalUriToDocViewerUri($uri, $menuArr)
     {
         foreach ($menuArr as $value) {
+            $value['content']['ru']['uri'] = 'doc/' . $value['content']['ru']['uri'];
+
             if ($value['content']['ru']['uri'] == $uri) {
                 return str_replace('.md', '.html', $value['content']['ru']['_src']);
             }
             if (is_array($value['children'])) {
                 foreach ($value['children'] as $subValue) {
+                    $subValue['content']['ru']['uri'] = 'doc/' . $subValue['content']['ru']['uri'];
                     if ($subValue['content']['ru']['uri'] == $uri) {
                         return str_replace('.md', '.html', $subValue['content']['ru']['_src']);
                     }
